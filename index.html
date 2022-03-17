@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AINOSOFT_WEBPAGE</title>
+        <base href="https://github.com/aino-monika/Page_Design_Responsive.git/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+              .container{
+                    height:90vh;
+                    border-radius: 20px;
+                    border: 1px solid whitesmoke;
+                    width: 90vw;
+                    margin-left: 4%;
+                    margin-top: 5%; 
+                } 
+                 img{
+                    display: block;
+                    max-width:100%;
+                    border-radius: 56px;
+                } 
+            
+                .Book-button {
+                /* background-color: #0078d0; */
+                background-color: lightseagreen;;
+                border: 0;
+                margin-left: 34%;
+                margin-top: -4%;
+                border-radius: 13px;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                outline: 0;
+                padding: 16px 21px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                transition: all .3s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                }
+
+                .Book-button:before {
+                background-color: initial;
+                background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+                border-radius: 125px;
+                content: "";
+                height: 50%;
+                left: 4%;
+                opacity: .5;
+                position: absolute;
+                top: 0;
+                transition: all .3s;
+                width: 92%;
+                }
+                .Book-button:hover {
+                box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+                transform: scale(1.05);
+                }
+                @media screen and (max-width: 800px) {
+                 .container{
+                    height:50vh;
+                    border-radius: 20px;
+                    border: 1px solid whitesmoke;
+                    width: 90vw;
+                    margin-left: 4%;
+                    margin-top: 10%; 
+                }  
+
+                .Book-button {
+                    padding: 16px 10px;
+                    margin-left: 17%;
+                    
+                }
+               
+                 img{
+                    display: block;
+                    max-width:100%;
+                    border-radius:22px;
+                } 
+
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="https://calendly.com/dpadhy/30min?">
+                <img src="audit.png">
+                <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
+            </form>
+        </div>
+    </body>
+</html>
+
