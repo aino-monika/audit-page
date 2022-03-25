@@ -1,104 +1,290 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>AINOSOFT_WEBPAGE</title>
-        <base href="https://github.com/aino-monika/audit-page.git/">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{
-            
-                    height: 80vh;
-                    width: 100vw;
-                    overflow: hidden;
+<head>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-            }
-              .container{
-                    
-                    border-radius: 20px;
-                    border: 0px solid none;
-                    margin-left:3.5%;
-                    margin-top: 0%; 
-                } 
-                 img{
-                    display: block;
-                    max-width: 75%;
-                    margin-left: 9%;
-                    border-radius: 56px;
-                } 
-            
-                .Book-button {
-                /* background-color: #0078d0; */
-                background-color: lightseagreen;;
-                border: 0;
-                margin-left: 35%;
-                margin-top: -4%;
-                border-radius: 13px;
-                color: #fff;
-                cursor: pointer;
-                display: inline-block;
-                font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-                font-size: 18px;
-                font-weight: 600;
-                outline: 0;
-                padding: 16px 21px;
-                position: relative;
-                text-align: center;
-                text-decoration: none;
-                transition: all .3s;
-                user-select: none;
-                -webkit-user-select: none;
-                touch-action: manipulation;
-                }
+* {
+  box-sizing: border-box;
+}
 
-                .Book-button:before {
-                background-color: initial;
-                background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-                border-radius: 125px;
-                content: "";
-                height: 50%;
-                left: 4%;
-                opacity: .5;
-                position: absolute;
-                top: 0;
-                transition: all .3s;
-                width: 92%;
-                }
-                .Book-button:hover {
-                box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-                transform: scale(1.05);
-                }
-                @media screen and (max-width: 800px) {
-                 .container{
-                    border-radius: 20px;
-                    border: 0px solid none;
-                    width: 100vw;
-                    margin-left: 7.5%;
-                    margin-top: 5%; 
-                }  
+body {
+  height: 85vh;
+  width: 97vw;
+  background: url("https://raw.githubusercontent.com/aino-monika/audit-page/763f08a5575b20ba30734e8f52d2c0c4f569dab7/Background.jpg"); 
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  color:  #009DDD;
+}
 
-                .Book-button {
-                    padding: 10px 5px;
-                    margin-left: 15%;
-                    
-                }
-               
-                 img{
-                    display: block;
-                    max-width:80%;
-                    margin-left: 4%;
-                    border-radius:22px;
-                } 
+h2{
+  color: #EF9000;
+  text-align: center;
+}
 
-                }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <form action="https://calendly.com/dpadhy/30min?">
-                <img src= "https://raw.githubusercontent.com/aino-monika/Page_Design_Responsive/a518256d0d1254f6966e69b9d155a06da035ed16/assets/Code%20Audit%20Website%20Mock_1.png" alt="NOT FOUND!!!">
-                <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
-            </form>
+.textcolor{
+  text-align: center;
+  color: #EF9000;
+}
+
+.bottom-text{
+  text-align: center;
+  color: #009DDD;
+  font-size: 22px;
+}
+
+.list{
+      font-size:75%;
+      margin-left: -15%;
+}
+
+.first{
+  float: left;
+    margin-top: -55%;
+    margin-left: -14%;
+}
+
+.two{
+  float: left;
+    margin-top: -55%;
+    margin-left: -14%;
+}
+
+.three{
+  float: left;
+    margin-top: -55%;
+    margin-left: -14%;
+}
+
+.four{
+  float: left;
+    margin-top: -55%;
+    margin-left: -14%;
+}
+
+.five{
+  float: left;
+    margin-top: -55%;
+    margin-left: -14%;
+}
+    
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.column1 {
+  margin-left: 38%;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {margin: 31px -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button{
+  margin-left: 40%;
+}
+
+.Book-button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.Book-button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.Book-button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 680px) {
+
+  h1{
+    text-align: center;
+    color:  #009DDD;
+  }
+
+ .textcolor{
+    text-align: center;
+    color: #EF9000;
+    font-size: 20px;
+}
+.bottom-text{
+  text-align: center;
+  font-size: 28px;
+}
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .column1 {
+    margin-left: 0%;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+.first{
+    float: left;
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+.two{
+    float: left;
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+.three{
+    float: left;
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+.four{
+    float: left;
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+.five{
+    float: left;
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+.list{
+    font-size: 85%;
+    margin-left: 0%;
+}
+
+.Book-button{
+      margin-left: 23%;
+}
+
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1; 
+}
+</style>
+</head>
+<body >
+<h1>Technology audit to turnaround the value of your product</h1>
+<p class="textcolor">and enable successful decision making</p>
+
+<div class="row">
+  <div class="column">
+        <div class="card">
+        <h2>Discover</h2>
+        <div class="first">
+          <img src="icons8-level-1-48.png"/>
         </div>
-    </body>
+        <ul class="list">
+            <li>The good, the bad, the ugly of your product, codebase and technology footprint.</li>
+            <li>Development and support structure efficiency or lack of it.</li>
+        </ul>
+        </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h2>Assess</h2>
+      <div class="two">
+        <img src="icons8-circled-2-c-48.png"/>
+      </div>
+      <ul class="list">
+        <li>Possibilities and challenges with your codebase</li>
+        <li>Should we turn it around,refactor or replace</li>
+    </ul>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2>Analyse</h2>
+      <div class="three">
+        <img src="icons8-circled-3-c-48.png"/>
+      </div>
+      <ul class="list">
+        <li>Are they any quick fixes in plain sight?</li>
+        <li>How can we turn it around if we choose to?</li>
+    </ul>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h2>Report</h2>
+      <div class="four">
+        <img src="icons8-circled-4-c-48.png"/>
+      </div>
+      <ul class="list">
+        <li>Effort estimates needed for turnaround</li>
+        <li>Challenges-current and future</li>
+        <li>Value estimation</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="column1">
+          <div class="card">
+          <h2>decision</h2>
+          <div class="five">
+            <img src="icons8-circled-5-c-48.png"/>
+          </div>
+          <ul class="list">
+            <li>What direction should we move it next?</li>
+            <li>Next immediate must do steps</li>
+            <li>Short team and mid term strategies and activities</li>
+        </ul>
+          </div>
+    </div>
+<div>
+    <p class="bottom-text">Have you thought of the value of a tech audit?<br>
+    If not,the time is now</p>
+    <form action="https://calendly.com/dpadhy/30min?">
+      <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
+  </form>
+</div>
+
+</body>
 </html>
 
