@@ -69,6 +69,24 @@
             z-index: 0;
         }
 
+
+        .box1{
+            width: 270px;
+            height: 320px;
+            background-color: #ffff;
+            border-radius: 5px;
+            padding: 20px;
+            padding-top: 70px;
+            margin: 20px;
+            text-align: inherit; 
+            letter-spacing: 1px;
+            /* box-shadow: 0 10px 10px rgba(0,0,0,.3); */
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            border: none;
+        }
+
         .box h3{
             font-size: 35px;
             padding: 20px 0;
@@ -93,11 +111,35 @@
             z-index: -1;
         }
 
+        .box1::before{
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
         .box::after{
             width: 100%;
             height: 100%;
             background-color: #FBDA61;
             background-image: linear-gradient(45deg, #80D0c7  0%,#0093E9 100%);
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -2;
+            clip-path: circle(20% at 90% 10%);
+            transition: .2s;
+        }
+
+        .box1::after{
+            width: 100%;
+            height: 100%;
+            /* background-color: #FBDA61; */
+            /* background-image: linear-gradient(45deg, #80D0c7  0%,#0093E9 100%); */
             content:'';
             position: absolute;
             top:0;
@@ -192,7 +234,7 @@
 
 
         button {
-            margin-left: 20%;
+            margin-left: 2%;
             margin-top: 3%;
         }
 
@@ -224,12 +266,13 @@
         .bottom-text {
                     text-align: center;
                     color: #009DDD;
-                    margin-top: 1%;
-                    font-size: 27px;
+                    margin-top: -20%;
+                    font-size: 24px;
+
         }
 
         button {
-                    margin-left: 20%;
+                    margin-left: -7%;
                     margin-top: 3%;
         }
 
@@ -268,14 +311,14 @@
         }
 
         button {
-                    margin-left: 25%;
+                    margin-left: -5%;
                     margin-top: 3%;
         }
 
         .logo {
                     height: auto;
                     width: 22vw;
-                    margin-top: 2%;
+                    margin-top: 0%;
                     margin-left: 38%;
                     /* position: sticky;
                     z-index: 10; */
@@ -323,6 +366,7 @@
                        Value estimation</p>
                     <span class="count">4</span>
                 </div>
+                
                 <div class="box">
                     <h3><u>Decision</u></h3>
                     <p>What direction should we move in next?<br><br>
@@ -331,13 +375,15 @@
                     <span class="count">5</span>
                 </div>
 
-                <div>
+                <div class="box1">
                     <p class="bottom-text">Have you thought of the value of a tech audit?<br>
                     </p>
                     <form action="https://calendly.com/dpadhy/30min?">
                       <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
                     </form>
-                  </div>
+                </div>
+
+                
 
         </div>
        
