@@ -22,6 +22,12 @@
             height: 100vh;
         }
 
+        .topnav{
+            background-color:#DEF0F9;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+        }
 
         h1 {
             text-align: center;
@@ -39,7 +45,6 @@
 
 
         .container{
-        
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -152,6 +157,7 @@
             text-align: center;
             color: #009DDD;
             font-size: 25px;
+            margin-top: 5%;
         }
 
         .Book-button {
@@ -186,7 +192,8 @@
 
 
         button {
-            margin-left: 41%;
+            margin-left: 20%;
+            margin-top: 3%;
         }
 
         .logo {
@@ -194,17 +201,12 @@
             width: 15vw;
             margin-left:41%;
             top:0;
-            position: sticky;
-            z-index: 1;
+            /* position: sticky;
+            z-index: 1; */
     
         }
 
-        h4{
-            margin-left: 43%;
-            margin-top: 1%;
-            color: #EF9000;
-            font-size: 22px;
-        }
+      
 
         @media screen and (max-width:768px) {
 
@@ -236,16 +238,11 @@
                     width: 22vw;
                     margin-top: 4%;
                     margin-left: 38%;
-                    position: sticky;
-                    z-index: 10;
+                    /* position: sticky;
+                    z-index: 10; */
             }
 
-            h4{
-            margin-left: 30%;
-            margin-top: 2%;
-            color: #EF9000;
-            font-size: 20px;
-        }
+          
 
 
         }
@@ -271,7 +268,7 @@
         }
 
         button {
-                    margin-left: 40%;
+                    margin-left: 25%;
                     margin-top: 3%;
         }
 
@@ -280,15 +277,10 @@
                     width: 22vw;
                     margin-top: 2%;
                     margin-left: 38%;
-                    position: sticky;
-                    z-index: 10;
+                    /* position: sticky;
+                    z-index: 10; */
             }
-            h4{
-            margin-left: 43%;
-            margin-top: 1%;
-            color: #EF9000;
-            font-size: 23px;
-        }
+         
 
 
         }
@@ -296,10 +288,12 @@
 </head>
 <body background="Background.jpg">
     <div class="main">
-        <a href="https://www.ainosoft.com/">
-            <img class="logo"
-              src="https://raw.githubusercontent.com/aino-monika/audit-page/c27fd5a5c231112d00459e78e852ca87984e35fd/assest/Ainosoft%20Logo.png" />
-          </a>
+        <div class="topnav">
+            <a href="https://www.ainosoft.com/">
+                <img class="logo"
+                src="https://raw.githubusercontent.com/aino-monika/audit-page/c27fd5a5c231112d00459e78e852ca87984e35fd/assest/Ainosoft%20Logo.png" />
+            </a>
+        </div>
         <h1>Technology audit to turnaround the value of your product</h1>
         <p class="textcolor">and enable successful decision making</p>
         <div class="container">
@@ -337,17 +331,16 @@
                     <span class="count">5</span>
                 </div>
 
+                <div>
+                    <p class="bottom-text">Have you thought of the value of a tech audit?<br>
+                    </p>
+                    <form action="https://calendly.com/dpadhy/30min?">
+                      <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
+                    </form>
+                  </div>
+
         </div>
-        <div>
-            <p class="bottom-text">Have you thought of the value of a tech audit?<br>
-              If not,the time is now</p>
-            <form action="https://calendly.com/dpadhy/30min?">
-              <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
-              <!-- <h4>*No Strings Attached</h4> -->
-              
-              <h4>*No Strings Attached</h4>
-            </form>
-          </div>
-</div>
+       
+    </div>
 </body>
 </html>
